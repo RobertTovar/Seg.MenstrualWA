@@ -17,8 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/surveys', function () {
+/*Route::get('/surveys', function () {
     return view('surveys');
+});*/
+
+Route::get('/surveys', function () {
+    return view('surveysv1');
 });
 
 Route::get('/dashboard', function () {
