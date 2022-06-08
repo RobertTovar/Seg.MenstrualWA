@@ -1,8 +1,16 @@
 .container {
     
-    padding-top: 15%;
+    padding-top: 10%;
+}
+
+.container.row {
+    min-width: 500px;
 }
 
 .prueba {
     background-color: blueviolet;
+}
+
+.lang img {
+    max-width: 100%;
 }

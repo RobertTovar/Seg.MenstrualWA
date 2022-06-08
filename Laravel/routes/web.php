@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::get('/', function () {
     return view('welcome');
 });
@@ -24,5 +24,13 @@ Route::get('/surveys', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+*/
 
+Route::get('/language', function () {
+    return view('lang_select');
+});
+
+Route::get('/', function () {
+    return view('surveys');
+})->middleware(['auth'])->name('surveys');
 require __DIR__.'/auth.php';
