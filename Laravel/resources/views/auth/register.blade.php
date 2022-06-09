@@ -2,9 +2,23 @@
 <x-guest-layout>
     <x-auth-card>
         <x-slot name="logo">
-            <a href="/">
-                <img src="img/main_logo.png" class="w-20 h-20 fill-current text-gray-500">
-            </a>
+            <div class="row">
+                <div class="col w-auto">
+                    <a href="/">
+                        <img src="img/escudo_uaz.gif" class="w-20 h-20 fill-current text-gray-500">
+                    </a>
+                </div>
+                <div class="col w-auto">
+                    <a href="/">
+                        <img src="img/main_logo.png" class="w-20 h-20 fill-current text-gray-500">
+                    </a>
+                </div>
+                <div class="col w-auto">
+                    <a href="/">
+                        <img src="img/uaslp_logo.png" class="w-20 h-20 fill-current text-gray-500">
+                    </a>
+                </div>
+            </div>
         </x-slot>
 
         <!-- Validation Errors -->

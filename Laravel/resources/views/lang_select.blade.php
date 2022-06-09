@@ -9,7 +9,7 @@ Language Selection
     <div class="row mb-5">
         <h1 class="text-center">Select your language / Selecciona tu idioma</h1>
     </div>
-    <div class="row">
+    <div class="row p-2">
         <div class="col w-auto">
             <a class="w-auto" href="">
                 <img src="img/uk_flag_g.gif" class="img-fluid mx-auto d-block">

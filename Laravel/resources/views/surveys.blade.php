@@ -17,8 +17,8 @@ Encuestas
     </div>
     <br>
     <div class="row justify-content-center mt-3">
-        <div class="list-group mx-auto w-50">
-            <label class="list-group-item d-flex gap-2 w-100">
+        <div class="list-group mx-auto w-auto">
+            <label class="list-group-item d-flex gap-2">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked disabled>
                 <span class="w-50">
                     Encuesta

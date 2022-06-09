@@ -6,6 +6,7 @@ nav {
 .container {
     
     padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 .container.row {
@@ -24,10 +25,11 @@ nav {
 
 .lang img {
     max-width: 50%;
+    opacity: 85%;
 }
 
 .lang img:hover {
-    max-width: 48%;
-    transition-duration: 500ms;
+    opacity: 100%;
+    transition-duration: 300ms;
     cursor: pointer;
 }
