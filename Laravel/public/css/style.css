@@ -1,6 +1,11 @@
+nav {
+    background-color: #F2ABEF;
+    transition-duration: 500ms;
+}
+
 .container {
     
-    padding-top: 10%;
+    padding-top: 1rem;
 }
 
 .container.row {
@@ -12,5 +17,11 @@
 }
 
 .lang img {
-    max-width: 100%;
+    max-width: 50%;
+}
+
+.lang img:hover {
+    max-width: 48%;
+    transition-duration: 500ms;
+    cursor: pointer;
 }

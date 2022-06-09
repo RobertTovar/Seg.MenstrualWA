@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+require __DIR__.'/auth.php';
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,21 +16,23 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+*/
 
 Route::get('/surveys', function () {
     return view('surveys');
-});
+})->name('surveys');
 
-Route::get('/dashboard', function () {
+Route::get('/', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
-*/
+
 
 Route::get('/language', function () {
     return view('lang_select');
-});
+})->name('language');
 
+/*
 Route::get('/', function () {
-    return view('surveys');
-})->middleware(['auth'])->name('surveys');
-require __DIR__.'/auth.php';
+    return view('lang_select');
+});
+*/

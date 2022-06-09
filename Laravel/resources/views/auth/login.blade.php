@@ -1,3 +1,4 @@
+@include('layouts.navigation_noLog')
 <x-guest-layout>
     <x-auth-card>
         <x-slot name="logo">

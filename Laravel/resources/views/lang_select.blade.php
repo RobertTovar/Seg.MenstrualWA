@@ -6,16 +6,28 @@ Language Selection
 
 @section('content')
 <div class="container lang">
-    <div class="row align-items-center">
-        <h1>Select Your language / Selecciona tu idioma</h1>
+    <div class="row mb-5">
+        <h1 class="text-center">Select your language / Selecciona tu idioma</h1>
     </div>
-    <div class="row align-items-center">
-        <div class="col w-40">
-            <img src="img/uk_flag.jpg">
+    <div class="row">
+        <div class="col w-auto">
+            <a class="w-auto" href="">
+                <img src="img/uk_flag_g.gif" class="img-fluid mx-auto d-block">
+            </a>
         </div>
-        <div class="col w-40">
-            <img src="img/mexico_flag.jpg">
+        <div class="col w-auto ">
+            <a class="w-auto" href="">
+                <img src="img/mx_flag_g.webp" class="img-fluid mx-auto d-block">
+            </a>
         </div>
     </div>
+    <?php
+    // PHP program to pop an alert
+    // message box on the screen
+    
+    // Display the alert box 
+    #echo '<script>alert("Welcome to Geeks for Geeks")</script>';
+    
+    ?>
 </div>
 @stop
