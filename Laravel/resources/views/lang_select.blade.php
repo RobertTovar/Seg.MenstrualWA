@@ -29,5 +29,37 @@ Language Selection
     #echo '<script>alert("Welcome to Geeks for Geeks")</script>';
     
     ?>
+    <div class="row mt-5">
+        <button type="button" class="btn btn-danger mx-auto w-auto " id="liveToastBtn"><b>Important / Importante</b></button>
+    </div>
+
+    <div class="toast-container top-50 start-50 translate-middle P-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto"><b>Important / Importante</b></strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Las siguientes encuestas forman parte de la investigación 
+                asociada a la vacuna contra COVID19, Alteración en el ciclo menstrual el 
+                cual tiene como objetivo conocer si existe una asociación entre las vacunas 
+                contra la COVID19 y las alteraciones en el ciclo menstrual de las mujeres.
+                <b>NOTA: ESTA INVESTIGACION NO INCITA A LAS PERSONAS A NO VACUNARSE CONTRA LA 
+                    COVID, RECUERDA QUE LA VACUNACION ES ESCENCIAL PARA LA PREVENCION CONTRA EL COVID19.
+                </b>
+            </div>
+        </div>
+    </div>
 </div>
+<script>
+    const toastTrigger = document.getElementById('liveToastBtn')
+    const toastLiveExample = document.getElementById('liveToast')
+    if (toastTrigger) {
+        toastTrigger.addEventListener('click', () => {
+            const toast = new bootstrap.Toast(toastLiveExample)
+
+            toast.show()
+        })
+    }
+</script>
 @stop

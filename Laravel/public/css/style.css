@@ -10,6 +10,12 @@ nav {
 
 .container.row {
     min-width: 500px;
+    justify-content: center;
+}
+
+#liveToast .toast-body {
+    opacity: 100% !important;
+    background-color: white;
 }
 
 .prueba {
