@@ -25,7 +25,7 @@ Encuestas
                     <small class="d-block text-muted">Encuesta de la etapa</small>
                 </span>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end w-50">
-                    <button type="button" class="btn btn-success me-md-2 disabled">Ir a Encuesta</button>
+                    <button type="button" class="btn btn-success me-md-2 disabled" id="urlSurvey">Ir a Encuesta</button>
                 </div>
             </label>
             <br>
@@ -36,7 +36,7 @@ Encuestas
                     <small class="d-block text-muted">Primer seguimiento de la etapa</small>
                 </span>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end w-50">
-                    <button type="button" class="btn btn-success me-md-2 disabled">Ir a Encuesta</button>
+                    <button type="button" class="btn btn-success me-md-2 disabled" id="urlSurveySeg1">Ir a Encuesta</button>
                 </div>
             </label>
             <br>
@@ -47,10 +47,29 @@ Encuestas
                     <small class="d-block text-muted">Segundo seguimiento de la etapa</small>
                 </span>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end w-50">
-                    <button type="button" class="btn btn-success me-md-2">Ir a Encuesta</button>
+                    <button type="button" class="btn btn-success me-md-2" id="urlSurveySeg2">Ir a Encuesta</button>
                 </div>
             </label>
         </div>
     </div>
 </div>
+<script type="text/javascript">
+        var urlSurvey1 = 'http://www.regresoseguro.org/survey/index.php/822217?lang=es-MX';
+        var urlSurveySeguimiento1 = 'http://www.regresoseguro.org/survey/index.php/227626?lang=es-MX';
+        var urlSurveySeguimiento2 = 'http://www.regresoseguro.org/survey/index.php/227626?lang=es-MX';
+        //var url = new URL("/encuesta1",urlSurvey);
+        //alert(url);
+        document.getElementById("urlSurvey1").onclick = function (){
+            location.href = urlSurvey1;
+        };
+
+        document.getElementById("urlSurveySeg1").onclick = function (){
+            location.href = urlSurveySeguimiento1;
+        };
+
+        document.getElementById("urlSurveySeg2").onclick = function (){
+            location.href = urlSurveySeguimiento2;
+        };
+        
+</script>
 @stop
