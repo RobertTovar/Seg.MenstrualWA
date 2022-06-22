@@ -1,14 +1,14 @@
 @extends('base')
 
 @section('title')
-Encuestas
+{{ __('Surveys') }}
 @stop
 
 @section('content')
 <div class="container">
     <div class="row justify-content-center mb-3">
         <div class="w-50">
-            <h1 class="text-center">Etapa </h1>
+            <h1 class="text-center">{{ __('Phase') }} </h1>
             <br>
             <div class="progress">
                 <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>

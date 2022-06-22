@@ -12,13 +12,25 @@
     <link href="css/style.css" rel="stylesheet">
     
     <title>
-        @yield('title');
+        @yield('title')
     </title>
 </head>
 <body>
     @include('layouts.navigation_noLog')
 
-    @yield('content');
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>{{ __('Important') }}</strong> 
+        {{ __('The following surveys are part of the research associated with the vaccine against COVID19, 
+        Alteration in the menstrual cycle on which aims to find out if there is an association between
+        vaccines against COVID19 and alterations in the menstrual cycle of women.') }}
+        <b>
+            {{ __('NOTE: THIS RESEARCH DOES NOT ENCOURAGE PEOPLE TO DO NOT GET VACCINATED AGAINST
+            COVID, REMEMBER THAT VACCINATION IS ESSENTIAL FOR THE PREVENTION AGAINST COVID19.') }}
+        </b>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    @yield('content')
 
     @include('layouts.footer')
 

@@ -1,7 +1,7 @@
 @extends('base')
 
 @section('title')
-Language Selection
+{{ __('Language Selection') }}
 @stop
 
 @section('content')
@@ -13,11 +13,17 @@ Language Selection
         <div class="col w-auto">
             <a class="w-auto" href="">
                 <img src="img/uk_flag_g.gif" class="img-fluid mx-auto d-block">
+                <?php
+                    \App::setLocale('en');
+                ?>
             </a>
         </div>
         <div class="col w-auto ">
             <a class="w-auto" href="">
                 <img src="img/mx_flag_g.webp" class="img-fluid mx-auto d-block">
+                <?php
+                    \App::setLocale('es');
+                ?>
             </a>
         </div>
     </div>
@@ -29,6 +35,7 @@ Language Selection
     #echo '<script>alert("Welcome to Geeks for Geeks")</script>';
     
     ?>
+    <!--
     <div class="row mt-5">
         <button type="button" class="btn btn-danger mx-auto w-auto " id="liveToastBtn"><b>Important / Importante</b></button>
     </div>
@@ -50,16 +57,9 @@ Language Selection
             </div>
         </div>
     </div>
+    -->
 </div>
 <script>
-    const toastTrigger = document.getElementById('liveToastBtn')
-    const toastLiveExample = document.getElementById('liveToast')
-    if (toastTrigger) {
-        toastTrigger.addEventListener('click', () => {
-            const toast = new bootstrap.Toast(toastLiveExample)
 
-            toast.show()
-        })
-    }
 </script>
 @stop
