@@ -11,6 +11,13 @@
                 <div class="p-6 bg-white border-b border-gray-200">
                     You're logged in!
                 </div>
+                <p> User ID: {{ auth()->user()->id }} </p>
+
+                <p> User Name: {{ auth()->user()->name }} </p>
+
+                <p> User Email: {{ auth()->user()->email }} </p>
+
+                <p> User Surveys: {{ auth()->user()->survey_1_1 }} </p>
             </div>
         </div>
     </div>

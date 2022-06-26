@@ -2,6 +2,13 @@ nav {
     background-color: #F2ABEF;
     transition-duration: 500ms;
 }
+.nav-title {
+    font-size: medium;
+    font-weight: bolder;
+}
+body {
+    padding: 0;
+}
 
 .container {
     
@@ -17,10 +24,6 @@ nav {
 #liveToast .toast-body {
     opacity: 100% !important;
     background-color: white;
-}
-
-.prueba {
-    background-color: blueviolet;
 }
 
 .lang img {

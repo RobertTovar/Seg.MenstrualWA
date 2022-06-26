@@ -1,21 +1,26 @@
-@include('layouts.navigation_noLog')
+@include('layouts.navigation')
 <x-guest-layout>
     <x-auth-card>
         <x-slot name="logo">
             <div class="row">
                 <div class="col w-auto">
                     <a href="/">
-                        <img src="img/escudo_uaz.gif" class="w-20 h-20 fill-current text-gray-500">
+                        <img src="img/escudo_uaz.gif" class="w-16 h-16 fill-current text-gray-500">
                     </a>
                 </div>
                 <div class="col w-auto">
                     <a href="/">
-                        <img src="img/main_logo.png" class="w-20 h-20 fill-current text-gray-500">
+                        <x-application-logo class="w-16 h-16 fill-current text-gray-500" />
                     </a>
                 </div>
                 <div class="col w-auto">
                     <a href="/">
-                        <img src="img/uaslp_logo.png" class="w-20 h-20 fill-current text-gray-500">
+                        <x-application-logo2 class="w-16 h-16 fill-current text-gray-500" />
+                    </a>
+                </div>
+                <div class="col w-auto">
+                    <a href="/">
+                        <img src="img/uaslp_logo.png" class="w-16 h-16 fill-current text-gray-500">
                     </a>
                 </div>
             </div>
@@ -56,6 +61,10 @@
             </div>
 
             <div class="flex items-center justify-end mt-4">
+                <a class="btn btn-outline-primary m-2" href="{{ route('register') }}">
+                    {{ __('Sign Up here') }}
+                </a>
+
                 @if (Route::has('password.request'))
                     <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
                         {{ __('Forgot your password?') }}

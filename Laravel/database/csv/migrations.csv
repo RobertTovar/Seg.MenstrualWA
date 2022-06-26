@@ -1,0 +1,7 @@
+id,migration,batch
+5,2022_06_22_213738_user,2
+6,2022_06_22_214345_create_users_table,3
+15,2014_10_12_000000_create_users_table,4
+16,2014_10_12_100000_create_password_resets_table,4
+17,2019_08_19_000000_create_failed_jobs_table,4
+18,2019_12_14_000001_create_personal_access_tokens_table,4

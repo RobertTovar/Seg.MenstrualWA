@@ -1,0 +1,1 @@
+<img src="img/lab_logo.jpeg" class="w-20 h-20 fill-current text-gray-500 rounded-circle">

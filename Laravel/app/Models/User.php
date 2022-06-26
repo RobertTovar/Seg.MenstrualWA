@@ -20,8 +20,29 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
-        'password',
+        'password'
     ];
+
+    /**
+     * The model's default values for attributes.
+     *
+     * @var array
+     */
+    protected $attributes = [
+        'survey_1' => false,
+        'survey_1_1' => false,
+        'survey_1_2' => false,
+        'survey_2' => false,
+        'survey_2_1' => false,
+        'survey_2_2' => false,
+        'survey_3' => false,
+        'survey_3_1' => false,
+        'survey_3_2' => false,
+    ];
+    /*
+    protected $table = 'users';
+    protected $primaryKey = 'email';
+    */
 
     /**
      * The attributes that should be hidden for serialization.
@@ -41,4 +62,13 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Get the Surveys associated with the user.
+     */
+    /*
+    public function surveys()
+    {
+        return $this->hasOne(Survey::class,'email','email');
+    }*/
 }
