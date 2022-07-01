@@ -8,8 +8,9 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
+    use Notifiable;
     use HasApiTokens, HasFactory, Notifiable;
 
     /**
@@ -39,10 +40,6 @@ class User extends Authenticatable
         'survey_3_1' => false,
         'survey_3_2' => false,
     ];
-    /*
-    protected $table = 'users';
-    protected $primaryKey = 'email';
-    */
 
     /**
      * The attributes that should be hidden for serialization.
@@ -62,13 +59,4 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-
-    /**
-     * Get the Surveys associated with the user.
-     */
-    /*
-    public function surveys()
-    {
-        return $this->hasOne(Survey::class,'email','email');
-    }*/
 }

@@ -23,7 +23,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('language')}}">
                         <i class="fa fa-globe"></i>
-                        {{ __('Change Language') }}
+                        {{ __('Change Language/Cambiar Idioma') }}
                     </a>
                 </li>
 

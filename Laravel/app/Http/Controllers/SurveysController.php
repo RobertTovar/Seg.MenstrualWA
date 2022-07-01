@@ -30,13 +30,11 @@ class SurveysController extends Controller
         $survArray ['s3_2'] = auth()->user()->survey_3_2;
         $survArray ['td_s3_2'] = auth()->user()->time_done_survey_3_2;
 
-        //return view('surveys')->with($s1,$s1_1,$s1_2,$s2,$s2_1,$s2_2,$s3,$s3_1,$s3_2);
         return view('surveys',$survArray);
     }
 
     public function firstTimeSurvey(int $phase,int $survey)
     {
-        #$user = User::find(auth()->user()->id);
         switch ($phase) {
             case 1:
                 if ($survey==0) {

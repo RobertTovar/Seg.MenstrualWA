@@ -41,13 +41,13 @@
                                     class="btn btn-success me-md-2">{{ __('Go to Survey')}}
                                 </a>
                             @else
-                                <a type="button" href="{{ route('surveyFirst',['phase'=>$phase,'survey'=>0]) }}" 
+                                <a type="button" href="#" 
                                     class="btn btn-secondary me-md-2 disabled">{{ __('Please wait at least one month')}} 
                                     {{$td_s1_2}}
                                 </a>
                             @endif
                         @else
-                            <a type="button" href="{{ route('surveyFirst',['phase'=>$phase,'survey'=>0]) }}" 
+                            <a type="button" href="#" 
                                 class="btn btn-secondary me-md-2 disabled">{{ __('Please do the previous survey first')}}
                             </a>
                         @endif
@@ -61,13 +61,13 @@
                                     class="btn btn-success me-md-2">{{ __('Go to Survey')}}
                                 </a>
                             @else
-                                <a type="button" href="{{ route('surveyFirst',['phase'=>$phase,'survey'=>0]) }}" 
+                                <a type="button" href="#" 
                                     class="btn btn-secondary me-md-2 disabled">{{ __('Please wait at least one month')}} 
                                     {{$td_s2_2}}
                                 </a>
                             @endif
                         @else
-                            <a type="button" href="{{ route('surveyFirst',['phase'=>$phase,'survey'=>0]) }}" 
+                            <a type="button" href="#" 
                                 class="btn btn-secondary me-md-2 disabled">{{ __('Please do the previous survey first')}}
                             </a>
                         @endif
@@ -101,13 +101,13 @@
                             class="btn btn-success me-md-2">{{ __('Go to Survey')}}
                         </a>
                     @else
-                        <a type="button" href="{{ route('surveyFirst',['phase'=>$phase,'survey'=>1]) }}" 
+                        <a type="button" href="#" 
                             class="btn btn-secondary me-md-2 disabled">{{ __('Please wait at least one month')}} 
                             {{$td_in_survey}}
                         </a>
                     @endif
                 @else
-                    <a type="button" href="{{ route('surveyFirst',['phase'=>$phase,'survey'=>1]) }}" 
+                    <a type="button" href="#" 
                         class="btn btn-secondary me-md-2 disabled">{{ __('Please do the previous survey first')}}
                     </a>
                 @endif
@@ -137,13 +137,13 @@
                             class="btn btn-success me-md-2">{{ __('Go to Survey')}}
                         </a>
                     @else
-                        <a type="button" href="{{ route('surveyFirst',['phase'=>$phase,'survey'=>2]) }}" 
+                        <a type="button" href="#" 
                             class="btn btn-secondary me-md-2 disabled">{{ __('Please wait at least one month')}} 
                             {{$td_check1}}
                         </a>
                     @endif
                 @else
-                    <a type="button" href="{{ route('surveyFirst',['phase'=>$phase,'survey'=>2]) }}" 
+                    <a type="button" href="#" 
                         class="btn btn-secondary me-md-2 disabled">{{ __('Please do the previous survey first')}}
                     </a>
                 @endif
